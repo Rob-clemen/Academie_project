@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'wedding/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'wedding/css/my_styles.css' %}">
+</head>
+<body>
+<!-- header -->
+
+{% include 'wedding/partials/header.html'%}
+{% block content %}
+{% endblock%}
+<script src="{% static 'wedding/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
+
